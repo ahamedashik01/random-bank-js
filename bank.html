@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap er Bank</title>
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+
+<body class="bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500">
+    <main class="bg-gray-50 w-3/4 mx-auto p-16 mt-20 rounded shadow-lg">
+        <section>
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto">
+                <div class="bg-blue-300 p-8 rounded shadow-lg">
+                    <h3 class="text-2xl">Deposit</h3>
+                    <h4 class="text-3xl font-medium">$<span id="total-deposit">00</span></h4>
+                </div>
+                <div class="bg-green-300 p-8 rounded shadow-lg">
+                    <h3 class="text-2xl">Withdrawn</h3>
+                    <h4 class="text-3xl font-medium">$<span id="total-withdraw">00</span></h4>
+                </div>
+                <div class="bg-purple-300 p-8 rounded shadow-lg">
+                    <h3 class="text-2xl">Balance</h3>
+                    <h4 class="text-3xl font-medium">$<span id="total-balance">1260</span></h4>
+                </div>
+            </div>
+        </section>
+        <section class="mt-16">
+            <div class="grid grid-cols-2 gap-4 w-3/4 mx-auto">
+                <div class="bg-pink-300 p-12 rounded shadow-lg">
+                    <input id="deposite-input" type="text" placeholder="$ Deposite Amount"
+                        class="border-2 border-gray-400 block w-3/4 mx-auto mb-8 p-2 rounded ">
+                    <button id="deposit-btn"
+                        class="text-2xl bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 px-4 py-2 text-gray-50 font-medium rounded block mx-auto">Deposit</button>
+                </div>
+                <div class="bg-indigo-300 p-12 rounded shadow-lg">
+                    <input id="withdraw-input" type="text" placeholder="$ Withdraw Amount"
+                        class="border-2 border-gray-400 block w-3/4 mx-auto mb-8 p-2 rounded ">
+                    <button id="withdraw-btn"
+                        class="text-2xl bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 px-4 py-2 text-gray-50 font-medium rounded block mx-auto">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="bank.js"></script>
+</body>
+
+
+</html>
